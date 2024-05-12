@@ -1,0 +1,182 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{AF9C23F5-427F-4EC4-8C82-C733CFFE1F51}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>project</RootNamespace>
+    <AssemblyName>project</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BouncyCastle.Crypto, Version=1.8.9.0, Culture=neutral, PublicKeyToken=0e99375e54769942">
+      <HintPath>..\packages\BouncyCastle.1.8.9\lib\BouncyCastle.Crypto.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp, Version=5.5.13.3, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\iTextSharp.5.5.13.3\lib\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="default.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="default.Designer.cs">
+      <DependentUpon>default.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frminsertbase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frminsertbase.Designer.cs">
+      <DependentUpon>frminsertbase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmInsertBaseMoen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInsertBaseMoen.Designer.cs">
+      <DependentUpon>frmInsertBaseMoen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmKholaseVaziatM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmKholaseVaziatM.Designer.cs">
+      <DependentUpon>frmKholaseVaziatM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmKholaseVaziatW.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmKholaseVaziatW.Designer.cs">
+      <DependentUpon>frmKholaseVaziatW.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmmain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmmain.Designer.cs">
+      <DependentUpon>frmmain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="sanad-M.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sanad-M.Designer.cs">
+      <DependentUpon>sanad-M.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sanad-W.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sanad-W.Designer.cs">
+      <DependentUpon>sanad-W.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SoratHesab.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SoratHesab.Designer.cs">
+      <DependentUpon>SoratHesab.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="default.resx">
+      <DependentUpon>default.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frminsertbase.resx">
+      <DependentUpon>frminsertbase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInsertBaseMoen.resx">
+      <DependentUpon>frmInsertBaseMoen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmKholaseVaziatM.resx">
+      <DependentUpon>frmKholaseVaziatM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmKholaseVaziatW.resx">
+      <DependentUpon>frmKholaseVaziatW.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmmain.resx">
+      <DependentUpon>frmmain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="sanad-M.resx">
+      <DependentUpon>sanad-M.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sanad-W.resx">
+      <DependentUpon>sanad-W.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SoratHesab.resx">
+      <DependentUpon>SoratHesab.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\c670cf35-38e6-4375-84e0-51900a0d4060.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\photocollage_202382014591245.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\photocollage_202382120489739.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
